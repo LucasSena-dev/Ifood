@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Div que vai de ponta a ponta (cabeçalho ou barra) */
+.top-div {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.button-left, .button-right {
+    position: absolute;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid #000000;
+}
+
+.button-left {
+    left: 20px; /* Ajuste conforme necessário */
+    background-color: #d3cdca;
+    color: #000000;
+}
+
+.button-right {
+    right: 20px; /* Ajuste conforme necessário */
+    background-color: #d3cdca;
+    color: #000000;
+}
+
+.button-left:hover, .button-right:hover {
+    opacity: 0.8;
+}
+
+/* Container para as duas divs inferiores */
+.bottom-container {
+    display: flex;
+    width: 100%;
+    height: auto; /* Ajusta conforme necessário */
+}
+
+/* Estilizando a div da esquerda */
+.left-div {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-recipe-btn {
+    background-color: #ea1d2c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* Containers para "Vencidos" e "Vencem Hoje" lado a lado */
+.receivables-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #f9f9f9; /* Cor de fundo igual à dos containers */
+    gap: 20px; /* Adiciona espaçamento entre os containers */
+    
+    border-radius: 50px;
+}
+
+.receivables-container {
+    flex: 1;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    /* Sombra em cada container */
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); /* Ajuste da sombra */
+}
+
+.receivables-container:last-child {
+    margin-right: 0; /* Remove a margem direita do último container */
+}
+
+.receivables-container h3 {
+    margin: 0;
+    text-align: center; /* Centraliza o texto dos títulos */
+}
+
+.receivables-container p {
+    margin: 5px 0 0 0;
+    text-align: center; /* Centraliza o texto dos subtítulos */
+    color: #000000;
+    font-size: 18px;
+}
+
+/* Estilizando o container da imagem */
+.image-container {
+    margin-top: 20px;
+    text-align: center; /* Centraliza a imagem */
+}
+
+.image-container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px; /* Ajuste para deixar os cantos arredondados, se desejar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve na imagem */
+    object-fit: cover;
+}
+
+.saldo-atual {
+    color: #f86746; /* Laranja */
+}
+
+.receitas {
+    color: #8a0606; 
+}
+
+.despesas {
+    color: #ea1d2c; 
+}
+
+.margem-lucro {
+    color: #c2bf16; 
+}
+
+
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-row h2 {
+        margin-bottom: 10px; /* Espaço entre o título e o botão em telas menores */
+    }
+
+    .receivables-row {
+        flex-direction: column;
+    }
+
+    .receivables-container {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espaço entre os containers em telas menores */
+    }
+
+    .receivables-container:last-child {
+        margin-bottom: 0; /* Remove a margem inferior do último container */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    }
+
+    .button-left, .button-right {
+        position: static; /* Remove a posição absoluta em telas menores */
+        margin-bottom: 10px; /* Espaço inferior para botões */
+    }
+
+    .button-left {
+        left: auto;
+        right: auto;
+    }
+
+    .button-right {
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-container {
+        flex-direction: column; /* Empilha as divs uma embaixo da outra */
+    }
+
+    .left-div, .right-div {
+        width: 100%; /* Garante que cada div ocupe a largura total */
+        margin-bottom: 20px; /* Espaço entre as divs empilhadas */
+    }
+
+    .receivables-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .receivables-container {
+        margin-bottom: 10px; /* Espaço entre os containers empilhados */
+        margin-right: 0; /* Remove a margem direita */
+    }
+
+    .receivables-container:last-child {
+        margin-bottom: 0; /* Remove a margem inferior do último container */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    }
+
+    .new-recipe-btn {
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        padding: 15px; /* Aumenta o padding para melhorar a acessibilidade */
+    }
+}

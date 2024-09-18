@@ -1,0 +1,75 @@
+.cabecalho{
+    background-color: #ea1d2c;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: #ea1d2c;
+}
+
+.container{
+    display: flex;
+    max-width: 100%;
+}
+
+.logo{
+    flex-grow: 0.1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.pag-atual{
+    align-content: center;
+    flex-grow: 6;
+    margin-right: 1rem;
+    
+}
+
+.menudrop{
+    align-content: center;
+    flex-grow: 0;
+    /*
+    padding-left: 75%;
+    */
+}
+
+
+
+#actual-page{
+    color: white;
+    margin-bottom: 0;
+    font-family:"poppins";
+}
+
+.dropdowntext{
+    font-family:"poppins";
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: var(--bs-border-width);
+    --bs-nav-tabs-border-color: #d7d7d7;
+    --bs-nav-tabs-border-radius: var(--bs-border-radius);
+    --bs-nav-tabs-link-hover-border-color: #ffffff #dc3545 var(--bs-border-color);
+    --bs-nav-tabs-link-active-color: #fff;
+    --bs-nav-tabs-link-active-bg: #ea1d2c;
+    --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) #ffffff;
+    border-bottom: var(--bs-nav-tabs-border-width) solid #e3e3e3;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #ea1d2c;
+    --bs-nav-link-hover-color: #616161;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+}
+
+.navi{
+    font-family:"poppins";
+    font-size: small;
+}
