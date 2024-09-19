@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/style/global/style.css" class="style">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+          <div class="box logo">
+            <a href="#">
+              <img src="../assets/images/global/ifood-logo.png" alt="Logo" height="45" class="d-inline-block align-text-top">
+            </a>
+          </div>
+          <div class="box pag-atual">
+            <p id="actual-page"></p>
+          </div>
+          <div class="box menudrop">
+            <div class="dropdown menudrop">
+              <img src="../assets/images/global/user.png" alt="user-pic" height="40" class="dropdown-toggle user-pic" data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item dropdowntext" href="#">Perfil</a></li>
+                <li><a class="dropdown-item dropdowntext" href="#">Contato</a></li>
+                <li><a class="dropdown-item dropdowntext" href="#">Sair</a></li>
+               </ul>
+            </div>
+          </div>
+        </div>
+    
+      </header>
+      <ul class="nav nav-tabs">
+        <li class="nav-item navi">
+          <a class="nav-link" aria-current="page" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+            </svg>
+           Visão Geral</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+            </svg>
+           Insights</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4.5V19a1 1 0 0 0 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.207M20 9v3.207"/>
+          </svg>
+           Metas</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8 7V6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1M3 18v-7a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+            </svg>
+           Faturamento
+          </a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+           Vendas</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z"/>
+            </svg>
+            Custos</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link active" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-5-4v4h4V3h-4Z"/>
+            </svg>
+           Transações</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M5.535 7.677c.313-.98.687-2.023.926-2.677H17.46c.253.63.646 1.64.977 2.61.166.487.312.953.416 1.347.11.42.148.675.148.779 0 .18-.032.355-.09.515-.06.161-.144.3-.243.412-.1.111-.21.192-.324.245a.809.809 0 0 1-.686 0 1.004 1.004 0 0 1-.324-.245c-.1-.112-.183-.25-.242-.412a1.473 1.473 0 0 1-.091-.515 1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.401 1.401 0 0 1 13 9.736a1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.4 1.4 0 0 1 9 9.74v-.008a1 1 0 0 0-2 .003v.008a1.504 1.504 0 0 1-.18.712 1.22 1.22 0 0 1-.146.209l-.007.007a1.01 1.01 0 0 1-.325.248.82.82 0 0 1-.316.08.973.973 0 0 1-.563-.256 1.224 1.224 0 0 1-.102-.103A1.518 1.518 0 0 1 5 9.724v-.006a2.543 2.543 0 0 1 .029-.207c.024-.132.06-.296.11-.49.098-.385.237-.85.395-1.344ZM4 12.112a3.521 3.521 0 0 1-1-2.376c0-.349.098-.8.202-1.208.112-.441.264-.95.428-1.46.327-1.024.715-2.104.958-2.767A1.985 1.985 0 0 1 6.456 3h11.01c.803 0 1.539.481 1.844 1.243.258.641.67 1.697 1.019 2.72a22.3 22.3 0 0 1 .457 1.487c.114.433.214.903.214 1.286 0 .412-.072.821-.214 1.207A3.288 3.288 0 0 1 20 12.16V19a2 2 0 0 1-2 2h-6a1 1 0 0 1-1-1v-4H8v4a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2v-6.888ZM13 15a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2Z" clip-rule="evenodd"/>
+            </svg>
+           Estoque</a>
+        </li>
+        <li class="nav-item navi">
+          <a class="nav-link" href="#">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.484 9.166 15 7h5m0 0-3-3m3 3-3 3M4 17h4l1.577-2.253M4 7h4l7 10h5m0 0-3 3m3-3-3-3"/>
+            </svg>
+           Integrações</a>
+        </li>
+      </ul>
+
+    <div class="row mb-4 m-5">
+        <div class="col-md-12 d-flex justify-content-between align-items-center">
+
+            <div class="d-flex align-items-center">
+                <input type="date" class="form-control me-3 fonte">
+            </div>
+            <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#novaDespesaModal">+ Nova Despesa</button>
+
+        </div>
+        <hr class="my-2">
+    </div>
+
+    <div class="row text-center justify-content-center mx-2">
+        <div class="col-md-2 m-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vencidos</h5>
+                    <p class="card-text text-dark">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 m-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">A Vencer</h5>
+                    <p class="card-text text-warning">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 m-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pago</h5>
+                    <p class="card-text text-primary">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar-light bg-light">
+        <hr class="mb-3 mt-4 m-5 my-1">
+        <form class="m-5 my-1">
+            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    </nav>
+
+    <div class="modal fade bd-example-modal-lg" id="novaDespesaModal" tabindex="-1" aria-labelledby="novaDespesaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="novaDespesaModalLabel">Nova Despesa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Data de Lançamento</label>
+                            <input type="date" class="form-control" id="data">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Fornecedor" class="form-label">Fornecedor</label>
+                            <select class="form-select" id="Fornecedor">
+                                <option selected>Selecione um Fornecedor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dataVencimento" class="form-label">Data de Vencimento</label>
+                            <input type="date" class="form-control" id="dataVencimento">
+                        </div>
+                        <div class="mb-3">
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="text" class="form-control" id="valor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formaPagamento" class="form-label">Forma de Pagamento</label>
+                            <select class="form-select" id="formaPagamento">
+                                <option selected>Selecione a opção de pagamento</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recorrencia" class="form-label">Recorrência</label>
+                            <input type="number" class="form-control" id="recorrencia">
+                            <option select>Quantidade de vezes por mês</option>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Concluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-md-12">
+            <div class="table-responsive m-5 my-2 ">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Data de Lançamento</th>
+                            <th>Descrição</th>
+                            <th>Fornecedor</th>
+                            <th>Valor</th>
+                            <th>Data de Vencimento</th>
+                            <th>Forma de Pagamento</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="text-center">Nenhum registro encontrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script src="../assets/js/headerLoader.js"></script>
+
+</body>
+</html>

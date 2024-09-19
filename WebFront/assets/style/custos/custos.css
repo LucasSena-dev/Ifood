@@ -1,0 +1,52 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    background-color: #fff;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    background-color: var(--ifood-red);
+    color: white;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-body {
+    font-size: 14px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+}
+
+.input-group-text {
+    background-color: white;
+    border-radius: 10PX;
+}
+
+.form-control {
+    border-radius: 10PX;
+}
