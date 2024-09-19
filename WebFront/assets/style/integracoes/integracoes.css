@@ -1,0 +1,56 @@
+.custom-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.container-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-left: 15px;
+    padding-top: 50px; /* Padding no topo */
+    padding-right: 15px; /* Padding à direita */
+    padding-bottom: 10px; /* Padding na parte inferior */
+    padding-left: 15px; /* Padding à esquerda */
+}
+.custom-container h3 {
+    margin: 0; /* Remove qualquer margin do título */
+    padding: 0; /* Remove padding do título */
+}
+
+.line {
+    margin: 0; /* Remove a margin superior da linha */
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.button-container {
+    text-align: center;
+}
+.equal-height {
+    display: flex;
+}
+
+.custom1-img {
+    width: 820px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona borda arredondada, se desejado */
+    /* Adicione outros estilos conforme necessário */
+}
+
+.custom2-img {
+    width: 500px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona borda arredondada, se desejado */
+    /* Adicione outros estilos conforme necessário */
+}
